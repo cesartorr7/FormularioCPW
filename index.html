@@ -9,6 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Registro</title>
     <link rel="stylesheet" href="styles.css">
+	<script>
+        function Habilitar(){
+            document.formulario.ingresosmen.disabled = false;
+        }
+
+        function Deshabilitar(){
+            document.formulario.ingresosmen.disabled = true;
+        }
+    </script>
 </head>
 <body>
     <form name="formulario" method="POST" data-netlify="true">
@@ -109,13 +118,13 @@
             <br/> <br/>
 
             <div class="opciones">
-            <input type="radio" name="sexo" id="hombre" value="Varón" required>
+            <input type="radio" name="sexo" id="hombre" value="Sexo: Varón" required>
             <label>Hombre</label>
             
-            <input type="radio" name="sexo" id="mujer" value="Mujer" required>
+            <input type="radio" name="sexo" id="mujer" value="Sexo: Mujer" required>
             <label>Mujer</label>
 
-            <input type="radio" name="sexo" id="otro" value="Otro" required>
+            <input type="radio" name="sexo" id="otro" value="Sexo: Otro" required>
             <label>Otro</label>
             <br/> <br/>
           </div>
@@ -125,14 +134,14 @@
             placeholder="Ej: Ingeniería en Software" required>
             <br/> <br/>
 
-            <label for="si" for="no">¿Trabajas? </label>
+            <label>¿Trabajas? </label>
             <br/> <br/>
 
-            <input type="radio" name="trabajo" id="si" value="Si" required>
-            <label>Sí</label>
+            <input type="radio" name="trabajo" id="si" value="Si trabaja" onclick="Habilitar()" required>
+            <label for="si">Sí</label>
             
-            <input type="radio" name="trabajo" id="no" value="No" required>
-            <label>No</label>  
+            <input type="radio" name="trabajo" id="no" value="No trabaja" onclick="Deshabilitar()" required>
+            <label for="no">No</label>  
             <br/><br/>
 
             <label for="ingresos">¿Cuáles son tus ingresos mensuales?</label>
