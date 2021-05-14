@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'calibri';
+  font-size: 18px;
+}
+
+body {
+  background-image: url('images/fondo2.jpg');
+}
+
+.form {
+  width: 600px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'georgia';
+}
+
+.controles {
+  width: 100%;  
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5; 
+  font-size: 18px;
+  color: white;
+}
+
+.controledad {
+  width: 20%;  
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5; 
+  font-size: 18px;
+  color: white;
+}
+
+.controlfecha {
+  width: 40%;  
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5; 
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+.opciones {
+  left: -25px;
+  padding-left: 30px;
+  position: relative;
+}
